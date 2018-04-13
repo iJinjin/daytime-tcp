@@ -17,9 +17,9 @@
 int main (int argc, char **argv) {
 
     int listenfd, connfd; /* listening socket, connection socket */
-    struct sockaddr_in servaddr, cliaddr;
+    struct sockaddr_in servaddr;
     int enable = 1;       /* for setsockopt */
-    socklen_t len;        /* for accept, length of cliaddr */
+    socklen_t len;        /* for accept */
     char buf[MAXLINE];    /* buffer */
     int n;                /* the number of bytes read */
     time_t ticks;
