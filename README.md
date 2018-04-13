@@ -1,6 +1,18 @@
 ## Simple Daytime Server / Client
 *By iJinjin (Youngjin Jin)*
 
+### What it does
+
+While the server is running, executing the client will print the local time and time zone.
+
+### How to compile
+
+Both the server and the client can be compiled by typing the `make` command in the terminal.
+`make clean` cleans all object / executable files
+`make clobber` cleans all object / executable files + all unnecessary files created from previous make commands
+
+### Things to note
+
 Server should be opened with a **port number** passed as the argument
 
 Client should be opened with a **valid IP address** (IPv4) and **port number**
