@@ -11,8 +11,6 @@ Both the server and the client can be compiled by typing the `make` command in t
 `make clean` cleans all object / executable files  
 `make clobber` cleans all object / executable files + all unnecessary files created from previous make commands
 
-*Note that compilation shows warnings about conflicting pointer types, but these can be ignored.*
-
 ### Things to note
 
 Server should be opened with a **port number** passed as the argument.
@@ -33,11 +31,11 @@ ex)
 ./daytimecli 127.0.0.1 1234
 ```
 
-The server should return the local time and the time zone to the client.
+The server should return the **local time** and the **time zone** to the client.
 
 Example of execution:
 ```
-./daytimecli 127.0.0.1 1234
+terminal$ ./daytimecli 127.0.0.1 1234
 Date: Fri Apr 13 17:18:22 2018 KST
-(client exits)
+terminal$ (client exits)
 ```

@@ -29,7 +29,7 @@ int main (int argc, char **argv) {
     inet_pton (AF_INET, argv[1], &servaddr.sin_addr.s_addr);
 
     /* connect the server, referring to the information of servaddr */
-    connect (connfd, &servaddr, sizeof (servaddr));
+    connect (connfd, (struct sockaddr *) &servaddr, sizeof (servaddr));
 
     while ( (n = read (connfd, buf, MAXLINE)) > 0) {
         buf[n] = 0; /* null terminate */

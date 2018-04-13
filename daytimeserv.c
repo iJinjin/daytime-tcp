@@ -40,7 +40,7 @@ int main (int argc, char **argv) {
     servaddr.sin_addr.s_addr = htonl (INADDR_ANY);
 
     /* bind the servaddr to listenfd */
-    bind (listenfd, &servaddr, sizeof (servaddr));
+    bind (listenfd, (struct sockaddr *) &servaddr, sizeof (servaddr));
 
     /* make listenfd into a passive socket, waiting for incoming connections */
     listen (listenfd, LISTENQ);
