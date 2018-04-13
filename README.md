@@ -1,11 +1,11 @@
-##Simple Daytime Server / Client
-*By iJinjin <Youngjin Jin>*
+## Simple Daytime Server / Client
+*By iJinjin (Youngjin Jin)*
 
-Server should be opened with a port number passed as the argument
+Server should be opened with a **port number** passed as the argument
 
-Client should be opened with a valid IP address (IPv4) and port number
+Client should be opened with a **valid IP address** (IPv4) and **port number**
 
-Note that the port number for server and client must match for the connection to work
+Note that the port number for server and client **must match** for the connection to work
 
 ex)
 ```
